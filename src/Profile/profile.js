@@ -10,7 +10,7 @@ function Profile (props) {
         <p>{props.profession}</p>
             </div>
         <div >{props.children}</div>
-        <Alert>{props.handleName}</Alert>
+        <button onClick={() => props.handleName(props.fullName)}>Show Name</button>
       
         </div>
 
@@ -20,6 +20,6 @@ Profile.defaultProps = {
     fullName: 'No name',
     bio: 'No bio provided',
     profession: 'No profession provided',
-    handleName:'Default Name',
+    
   };
 export default Profile;

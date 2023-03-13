@@ -7,9 +7,13 @@ function App() {
     height:"300px",
     width:"200px",
 };
+   const handleName = (name) => {
+       alert(`The profile user's name is ${name}`);
+};
+
   return (
     <div className="App">
-      <Profile className="Profile" fullName="Elyes Ammar" bio="Full stack Developer" profession="React Developer">
+      <Profile className="Profile" fullName="Elyes Ammar" bio="Full stack Developer" profession="React Developer" handleName={handleName}>
         <img src="https://gomycodelearndev.blob.core.windows.net/profiles/6fd122ce-f6e0-4f1d-b389-5510c5ce3e9c-133141149778450239.jpg" alt="MyPhoto" style={imgStyle} ></img>
       </Profile>
     </div>
